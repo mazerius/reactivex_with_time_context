@@ -1,0 +1,24 @@
+{
+  "name": "hades",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "npm install && node -r esm index.js"
+  },
+  "author": "",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "kalman-filter": "^1.9.2",
+    "myrxjs": "file:/Users/stefanos/Projects/rxjs7-modified/rxjs-master",
+    "timeunit": "^1.1.1",
+    "websocket": "^1.0.32",
+    "ws": "^7.4.2"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}

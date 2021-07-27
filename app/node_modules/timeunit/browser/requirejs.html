@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script>
+        require(["../lib/timeunit"], function(timeunit) {
+            $content = $("#content");
+            $content.html(
+                "5 seconds in milliseconds is " + timeunit.seconds.toMillis(5) + "<br>" +
+                "5000 milliseconds in seconds is " + timeunit.milliseconds.toSeconds(5000) + "<br>"
+            );
+        });
+    </script>
+
+</html>
